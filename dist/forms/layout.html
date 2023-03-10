@@ -6,6 +6,7 @@
 * Copyright (c) 2022 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
+
 <!-- Breadcrumb-->
 <html lang="en">
   <head>
@@ -35,7 +36,7 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Vendors styles-->
-    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
@@ -46,10 +47,7 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -68,24 +66,24 @@
           <use xlink:href="assets/brand/coreui.svg#signet"></use>
         </svg>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
         <li class="nav-item"><a class="nav-link" href="index.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
             </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-title">Theme</li>
         <li class="nav-item"><a class="nav-link" href="colors.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop"></use>
             </svg> Colors</a></li>
         <li class="nav-item"><a class="nav-link" href="typography.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
             </svg> Typography</a></li>
         <li class="nav-title">Components</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
             </svg> Base</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
@@ -107,7 +105,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
             </svg> Buttons</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
@@ -117,11 +115,11 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="charts.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
             </svg> Charts</a></li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
             </svg> Forms</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
@@ -136,7 +134,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Icons</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
@@ -146,7 +144,7 @@
         </li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
             </svg> Notifications</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
@@ -157,43 +155,42 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="widgets.html">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
             </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
         <li class="nav-divider"></li>
         <li class="nav-title">Extras</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
             </svg> Pages</a>
           <ul class="nav-group-items">
             <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Login</a></li>
             <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                 </svg> Register</a></li>
             <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 404</a></li>
             <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
                 <svg class="nav-icon">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
                 </svg> Error 500</a></li>
           </ul>
         </li>
         <li class="nav-item mt-auto"><a class="nav-link" href="https://coreui.io/docs/templates/installation/" target="_blank">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-description"></use>
             </svg> Docs</a></li>
         <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
             </svg> Try CoreUI
-            <div class="fw-semibold">PRO</div>
-          </a></li>
+            <div class="fw-semibold">PRO</div></a></li>
       </ul>
       <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     </div>
@@ -202,7 +199,7 @@
         <div class="container-fluid">
           <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
             <svg class="icon icon-lg">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
             </svg>
           </button><a class="header-brand d-md-none" href="#">
             <svg width="118" height="46" alt="CoreUI Logo">
@@ -216,58 +213,57 @@
           <ul class="header-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                 </svg></a></li>
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
                 </svg></a></li>
             <li class="nav-item"><a class="nav-link" href="#">
                 <svg class="icon icon-lg">
-                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                 </svg></a></li>
           </ul>
           <ul class="header-nav ms-3">
             <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
-              </a>
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
               <div class="dropdown-menu dropdown-menu-end pt-0">
                 <div class="dropdown-header bg-light py-2">
                   <div class="fw-semibold">Account</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
                   </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
                   </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
                   </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
                   </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
                 <div class="dropdown-header bg-light py-2">
                   <div class="fw-semibold">Settings</div>
                 </div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
                   </svg> Profile</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
                   </svg> Settings</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
                   </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
                   </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
                 <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
                   </svg> Lock Account</a><a class="dropdown-item" href="#">
                   <svg class="icon me-2">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                   </svg> Logout</a>
               </div>
             </li>
@@ -304,11 +300,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1242" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#utilities" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -336,11 +332,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-273" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#form-grid" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -368,11 +364,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1036" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#gutters" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -393,11 +389,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-267" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#gutters" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -426,7 +422,7 @@
                           <div class="col-md-4">
                             <label class="form-label" for="inputState">State</label>
                             <select class="form-select" id="inputState">
-                              <option selected="">Choose...</option>
+                              <option selected>Choose...</option>
                               <option>...</option>
                             </select>
                           </div>
@@ -460,11 +456,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1142" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#horizontal-form" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -486,7 +482,7 @@
                             <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
                             <div class="col-sm-10">
                               <div class="form-check">
-                                <input class="form-check-input" id="gridRadios1" type="radio" name="gridRadios" value="option1" checked="">
+                                <input class="form-check-input" id="gridRadios1" type="radio" name="gridRadios" value="option1" checked>
                                 <label class="form-check-label" for="gridRadios1">First radio</label>
                               </div>
                               <div class="form-check">
@@ -494,7 +490,7 @@
                                 <label class="form-check-label" for="gridRadios2">Second radio</label>
                               </div>
                               <div class="form-check disabled">
-                                <input class="form-check-input" id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled="">
+                                <input class="form-check-input" id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled>
                                 <label class="form-check-label" for="gridRadios3">Third disabled radio</label>
                               </div>
                             </div>
@@ -524,11 +520,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-682" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#horizontal-form-label-sizing" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -566,11 +562,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1223" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#column-sizing" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -601,11 +597,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-187" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#auto-sizing" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -625,7 +621,7 @@
                           <div class="col-auto">
                             <label class="visually-hidden" for="autoSizingSelect">Preference</label>
                             <select class="form-select" id="autoSizingSelect">
-                              <option selected="">Choose...</option>
+                              <option selected>Choose...</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
@@ -649,11 +645,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-1281" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#auto-sizing" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -673,7 +669,7 @@
                           <div class="col-sm-3">
                             <label class="visually-hidden" for="specificSizeSelect">Preference</label>
                             <select class="form-select" id="specificSizeSelect">
-                              <option selected="">Choose...</option>
+                              <option selected>Choose...</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
@@ -704,11 +700,11 @@
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#preview-590" role="tab">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-media-play"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-media-play"></use>
                           </svg>Preview</a></li>
                       <li class="nav-item"><a class="nav-link" href="https://coreui.io/docs/forms/layout/#inline-forms" target="_blank">
                           <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-code"></use>
                           </svg>Code</a></li>
                     </ul>
                     <div class="tab-content rounded-bottom">
@@ -724,7 +720,7 @@
                           <div class="col-12">
                             <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
                             <select class="form-select" id="inlineFormSelectPref">
-                              <option selected="">Choose...</option>
+                              <option selected>Choose...</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
@@ -750,15 +746,14 @@
         </div>
       </div>
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> &copy; 2022 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-    <script src="vendors/simplebar/js/simplebar.min.js"></script>
-    <script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script> 
     </script>
-
   </body>
 </html>
